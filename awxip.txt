@@ -1,0 +1,1 @@
+#used to store the public ip address of awx, do not delete this file

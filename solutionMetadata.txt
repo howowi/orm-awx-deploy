@@ -1,0 +1,17 @@
+"oci-ansible-awx.0004": {
+    "solutionExposure": "prod",
+    "name": "${Messages.solutionsHub.solutions.ociAnsibleAWX.solutionName()}",
+    "description": "${Messages.solutionsHub.solutions.ociAnsibleAWX.stackDescription()}",
+    "longDescription": {
+        "description": "${Messages.solutionsHub.solutions.ociAnsibleAWX.longDescription()}"
+    },
+    "icon": {
+        "iconLine1": "AWX",
+        "iconLine2": "deployment on",
+        "iconLine3": "OKE"
+    },
+    "terraformVersion": "1.0.x",
+    "isFreeTier": false,
+    "type": "service",
+    "categoryId": "1"
+}

@@ -1,0 +1,1 @@
+#used to store the default password of awx, do not delete this file
