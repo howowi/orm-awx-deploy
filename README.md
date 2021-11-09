@@ -1,2 +1,2 @@
-# orm-awx-deploy
-Deploy AWX on OKE using Oracle Resource Manager
+# Deploy AWX on OKE using Oracle Resource Manager
+
