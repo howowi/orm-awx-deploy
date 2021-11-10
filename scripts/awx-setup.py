@@ -149,12 +149,12 @@ print("\nORGANIZATION UPDATE FOR GALAXY_CREDENTIAL COMPLETE! ", response.text)
 awx_proj_url = awx_url + "/api/v2/projects/"
 payload = json.dumps(
     {
-        "name": "OCI_COMMON_PROJECT",
-        "description": "Common project is used for dynamic inventory",
+        "name": "OCI_DEPLOYMENT_PROJECT",
+        "description": "Project for deployment to OCI resources",
         "local_path": "",
         "scm_type": "git",
-        "scm_url": "https://github.com/oracle/oci-ansible-collection",
-        "scm_branch": "OCI-AWX-v19.3",
+        "scm_url": "https://github.com/howowi/oci-awx-project",
+        "scm_branch": "master",
         "scm_refspec": "",
         "scm_clean": True,
         "scm_track_submodules": False,
