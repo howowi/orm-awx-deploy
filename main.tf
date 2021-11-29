@@ -77,3 +77,14 @@ data "oci_containerengine_cluster_kube_config" "awx_cluster_kube_config" {
   #Optional
   token_version = "2.0.0"
 }
+
+## ------------Create Webapp Instances------------------ ##
+
+resource "oci_core_instance" "webapp_instance" {
+  # Required
+  depends_on = [oci_core_vcn.webapp_vcn, oci_core_security_list.webapp_public_security_list, oci_core_route_table.webapp_route_table, oci_core_subnet.webapp_regional_subnet]
+  availability_domain = data.oci_identity_availability_domain.ad1.name
+  compartment_id = var.compartment_ocid
+  shape = "VM.Standard.E2.1"
+
+}
